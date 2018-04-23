@@ -1,7 +1,30 @@
 <html>
 	<head>
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+		<script>
+			// Initialize Firebase
+		    // TODO: Replace with your project's customized code snippet
+		  	var config = {
+			    apiKey: "AIzaSyDWCBabJlXFiT6ZGLrtov44dYzB_-m4bnE",
+				authDomain: "auth-firestore.firebaseapp.com",
+				databaseURL: "https://auth-firestore.firebaseio.com",
+				projectId: "auth-firestore",
+				storageBucket: "auth-firestore.appspot.com",
+				messagingSenderId: "551061674717"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script type="text/javascript">
+			var db = firebase.firestore();
+			db.collection("meals").get().then( (querySnapshot) => {
+				querySnapshot.forEach( (doc) => {
+					console.log("${doc.id} => ${doc.data()}");
+				});
+			});
+		</script>
 	</head>
 	<body>
-		<p>This is a cool test website. Isn't it cool?</p>
 	</body>
 </html>
