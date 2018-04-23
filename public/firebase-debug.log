@@ -1,0 +1,32 @@
+[debug] [2018-04-23T22:50:56.728Z] ----------------------------------------------------------------------
+[debug] [2018-04-23T22:50:56.731Z] Command:       /home/s1nus/NodeJS/bin/node /home/s1nus/NodeJS/bin/firebase serve
+[debug] [2018-04-23T22:50:56.731Z] CLI Version:   3.18.4
+[debug] [2018-04-23T22:50:56.731Z] Platform:      linux
+[debug] [2018-04-23T22:50:56.731Z] Node Version:  v8.11.1
+[debug] [2018-04-23T22:50:56.731Z] Time:          Mon Apr 23 2018 18:50:56 GMT-0400 (EDT)
+[debug] [2018-04-23T22:50:56.731Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-23T22:50:56.739Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-23T22:50:56.739Z] > authorizing via signed-in user
+[debug] [2018-04-23T22:50:56.741Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/auth-firestore  
+  
+ Mon Apr 23 2018 18:50:56 GMT-0400 (EDT)
+[debug] [2018-04-23T22:50:57.317Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-23T22:50:57.317Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/auth-firestore/tokens  
+  
+ Mon Apr 23 2018 18:50:57 GMT-0400 (EDT)
+[debug] [2018-04-23T22:50:57.936Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-23T22:50:57.937Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/auth-firestore  
+  
+ Mon Apr 23 2018 18:50:57 GMT-0400 (EDT)
+[debug] [2018-04-23T22:50:58.187Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/s1nus/Prog/FoodToHeal'...
+[info] 
+[debug] [2018-04-23T22:50:58.188Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/551061674717/clients/_:getWebAppConfig  
+  
+ Mon Apr 23 2018 18:50:58 GMT-0400 (EDT)
+[debug] [2018-04-23T22:50:58.526Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
