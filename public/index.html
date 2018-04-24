@@ -20,18 +20,12 @@
 			document.addEventListener("DOMContentLoaded", init);
 			function init() {
 				document.getElementById("loginbtn").addEventListener("click", function() {
-					var username = document.getElementById("email-address").value;
-					var password = document.getElementById("password").value;
-					firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
+					firebase.auth().signInWithEmailAndPassword("connor@foodtoheal.org", "password").catch(function(error) {
 						console.log("There was an error lol");
-					});
+					}).then( () => alert("hello")
 					
-					var db = firebase.firestore();
-					db.collection("meals").get().then( (querySnapshot) => {
-						querySnapshot.forEach( (doc) => {
-							console.log("${doc.id} => ${doc.data()}");
-						});
-					});
+					);
+					
 				});
 			}
 		</script>
