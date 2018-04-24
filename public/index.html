@@ -17,14 +17,28 @@
 			firebase.initializeApp(config);
 		</script>
 		<script type="text/javascript">
-			var db = firebase.firestore();
-			db.collection("meals").get().then( (querySnapshot) => {
-				querySnapshot.forEach( (doc) => {
-					console.log("${doc.id} => ${doc.data()}");
+			document.addEventListener("DOMContentLoaded", init);
+			function init() {
+				document.getElementById("loginbtn").addEventListener("click", function() {
+					var username = document.getElementById("email-address").value;
+					var password = document.getElementById("password").value;
+					firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
+						console.log("There was an error lol");
+					});
+					
+					var db = firebase.firestore();
+					db.collection("meals").get().then( (querySnapshot) => {
+						querySnapshot.forEach( (doc) => {
+							console.log("${doc.id} => ${doc.data()}");
+						});
+					});
 				});
-			});
+			}
 		</script>
 	</head>
 	<body>
+		<input type="text" id="email-address" placeholder="Email address" />
+		<input type="password" id="password" placeholder="password" />
+		<button id="loginbtn">Log In</button>
 	</body>
 </html>
