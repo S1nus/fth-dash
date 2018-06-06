@@ -1,5 +1,8 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="main.css">
 		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
@@ -18,28 +21,34 @@
 		</script>
 		<script type="text/javascript">
 			document.addEventListener("DOMContentLoaded", init);
+			
 			function init() {
 				document.getElementById("loginbtn").addEventListener("click", function() {
 					var username = document.getElementById("email-address").value;
 					var password = document.getElementById("password").value;
 
-					firebase.auth().signInWithEmailAndPassword(username, password).then(
-						function() {
-							db = firebase.firestore();
-							db.collection("meals").get().then((querySnapshot) => {
-									querySnapshot.forEach((doc) => {
-										console.log(`${doc.id} => ${doc.data()}`);
-									});
-							});
-						}
-					);
+					firebase.auth().signInWithEmailAndPassword(username, password).then(logIn);
+				});
+			}
+			
+			function logIn() {
+				content = document.getElementById("content");
+
+				db = firebase.firestore();
+				db.collection("meals").get().then((querySnapshot) => {
+					querySnapshot.forEach((doc) => {
+						console.log(`${doc.id} => ${doc.data()}`);
+					});
 				});
 			}
 		</script>
 	</head>
 	<body>
-		<input type="text" id="email-address" placeholder="Email address" />
-		<input type="password" id="password" placeholder="password" />
-		<button id="loginbtn">Log In</button>
+		<div id="content">
+			<h1>FoodToHeal</h1>
+			<input type="text" id="email-address" placeholder="Email address" />
+			<input type="password" id="password" placeholder="password" />
+			<button id="loginbtn">Log In</button>
+		</div>
 	</body>
 </html>

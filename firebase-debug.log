@@ -1,0 +1,105 @@
+[debug] [2018-06-02T22:27:58.787Z] ----------------------------------------------------------------------
+[debug] [2018-06-02T22:27:58.789Z] Command:       /home/s1nus/node/bin/node /home/s1nus/node/bin/firebase serve
+[debug] [2018-06-02T22:27:58.789Z] CLI Version:   3.18.5
+[debug] [2018-06-02T22:27:58.789Z] Platform:      linux
+[debug] [2018-06-02T22:27:58.789Z] Node Version:  v8.11.1
+[debug] [2018-06-02T22:27:58.789Z] Time:          Sat Jun 02 2018 18:27:58 GMT-0400 (EDT)
+[debug] [2018-06-02T22:27:58.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-02T22:27:58.797Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-02T22:27:58.797Z] > authorizing via signed-in user
+[debug] [2018-06-02T22:27:58.799Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/auth-firestore  
+  
+ Sat Jun 02 2018 18:27:58 GMT-0400 (EDT)
+[debug] [2018-06-02T22:27:59.142Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T22:27:59.144Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/auth-firestore/tokens  
+  
+ Sat Jun 02 2018 18:27:59 GMT-0400 (EDT)
+[debug] [2018-06-02T22:27:59.440Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T22:27:59.441Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/auth-firestore  
+  
+ Sat Jun 02 2018 18:27:59 GMT-0400 (EDT)
+[debug] [2018-06-02T22:27:59.716Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/s1nus/Prog/fth-dash'...
+[info] 
+[debug] [2018-06-02T22:27:59.718Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/551061674717/clients/_:getWebAppConfig  
+  
+ Sat Jun 02 2018 18:27:59 GMT-0400 (EDT)
+[debug] [2018-06-02T22:28:00.053Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-06T23:51:31.153Z] ----------------------------------------------------------------------
+[debug] [2018-06-06T23:51:31.156Z] Command:       /home/s1nus/node/bin/node /home/s1nus/node/bin/firebase serve
+[debug] [2018-06-06T23:51:31.156Z] CLI Version:   3.18.5
+[debug] [2018-06-06T23:51:31.156Z] Platform:      linux
+[debug] [2018-06-06T23:51:31.156Z] Node Version:  v8.11.1
+[debug] [2018-06-06T23:51:31.156Z] Time:          Wed Jun 06 2018 19:51:31 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:31.156Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-06T23:51:31.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-06T23:51:31.170Z] > authorizing via signed-in user
+[debug] [2018-06-06T23:51:31.172Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-06T23:51:31.172Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/YJzDQjBoFz9dLJKiqkJIIoH-3JI0vosm5NiJdUWRuiE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jun 06 2018 19:51:31 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:31.296Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T23:51:31.307Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/auth-firestore  
+  
+ Wed Jun 06 2018 19:51:31 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:31.750Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T23:51:31.751Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/auth-firestore/tokens  
+  
+ Wed Jun 06 2018 19:51:31 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:32.163Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T23:51:32.164Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/auth-firestore  
+  
+ Wed Jun 06 2018 19:51:32 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:32.445Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/s1nus/Prog/fth-dash'...
+[info] 
+[debug] [2018-06-06T23:51:32.448Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/551061674717/clients/_:getWebAppConfig  
+  
+ Wed Jun 06 2018 19:51:32 GMT-0400 (EDT)
+[debug] [2018-06-06T23:51:32.820Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-06T23:52:29.050Z] ----------------------------------------------------------------------
+[debug] [2018-06-06T23:52:29.052Z] Command:       /home/s1nus/node/bin/node /home/s1nus/node/bin/firebase serve
+[debug] [2018-06-06T23:52:29.052Z] CLI Version:   3.18.5
+[debug] [2018-06-06T23:52:29.052Z] Platform:      linux
+[debug] [2018-06-06T23:52:29.052Z] Node Version:  v8.11.1
+[debug] [2018-06-06T23:52:29.052Z] Time:          Wed Jun 06 2018 19:52:29 GMT-0400 (EDT)
+[debug] [2018-06-06T23:52:29.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-06T23:52:29.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-06T23:52:29.060Z] > authorizing via signed-in user
+[debug] [2018-06-06T23:52:29.062Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/auth-firestore  
+  
+ Wed Jun 06 2018 19:52:29 GMT-0400 (EDT)
+[debug] [2018-06-06T23:52:29.424Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T23:52:29.425Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/auth-firestore/tokens  
+  
+ Wed Jun 06 2018 19:52:29 GMT-0400 (EDT)
+[debug] [2018-06-06T23:52:29.763Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-06T23:52:29.765Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/auth-firestore  
+  
+ Wed Jun 06 2018 19:52:29 GMT-0400 (EDT)
+[debug] [2018-06-06T23:52:30.081Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/s1nus/Prog/fth-dash'...
+[info] 
+[debug] [2018-06-06T23:52:30.084Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/551061674717/clients/_:getWebAppConfig  
+  
+ Wed Jun 06 2018 19:52:30 GMT-0400 (EDT)
+[debug] [2018-06-06T23:52:30.408Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
